@@ -5,7 +5,13 @@
   --crimson: #3c0303;
 }
 
-* body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: var(--pink);
 }
 
@@ -15,10 +21,11 @@ header {
     "Lucida Sans", Arial, sans-serif;
   background-color: var(--maroon);
   color: var(--pink);
+  width: 100%;
 }
 
 header nav {
-  padding-top: 15px;
+  padding-top: 32px;
   margin-right: 20px;
   float: right;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -46,26 +53,15 @@ img {
   max-width: 20%;
 }
 
-/*
-@media screen and (min-width: 768px) {
-  .card-column {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .card-column:last-child {
-    flex-grow: 1;
-  }
+h2 {
+  font-size: 50 px;
 }
 
-@media screen and (min-width: 992px) {
-  header {
-    width: 75%;
-  }
-
-  .card-column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
+.sidebar {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  float: right;
+  border: var(--crimson);
+  box-shadow: 0 4px 8px var(--maroon);
 }
-*/
