@@ -1,0 +1,71 @@
+:root {
+  --pink: #efbfc6;
+  --light-red: #c22828;
+  --maroon: #8a0f0f;
+  --crimson: #3c0303;
+}
+
+* body {
+  background-color: var(--pink);
+}
+
+header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--maroon);
+  color: var(--pink);
+}
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin-top: -13%;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  color: var(--crimson);
+}
+
+img {
+  height: auto;
+  max-width: 20%;
+}
+
+/*
+@media screen and (min-width: 768px) {
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+*/
