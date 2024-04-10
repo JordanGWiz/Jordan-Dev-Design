@@ -3,6 +3,7 @@
   --light-red: #c22828;
   --maroon: #8a0f0f;
   --crimson: #3c0303;
+  --glow: #bc544b;
 }
 
 * {
@@ -22,25 +23,30 @@ header {
   background-color: var(--maroon);
   color: var(--pink);
   width: 100%;
+  display: flex;
 }
 
 header nav {
-  padding-top: 32px;
-  margin-right: 20px;
-  float: right;
+  padding-top: 70px;
+  float: inline-end;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 25px;
   font-weight: bolder;
+  display: flex;
+  justify-content: flex-end;
 }
 
 header nav ul {
   list-style-type: none;
   margin-top: -13%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 header nav ul li {
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
   margin-left: 25px;
 }
 
@@ -51,6 +57,10 @@ a {
 img {
   height: auto;
   max-width: 20%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
@@ -58,10 +68,14 @@ h2 {
 }
 
 .sidebar {
-  width: 300px;
-  margin-bottom: 20px;
-  padding: 10px;
-  float: right;
-  border: var(--crimson);
-  box-shadow: 0 4px 8px var(--maroon);
+  width: 80%;
+  margin: 35px auto;
+  padding: 20px;
+  background-color: var(--light-red);
+  border: 5px var(--crimson);
+  box-shadow: 0px 4px 8px var(--maroon);
+}
+
+.sidebar:hover {
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgb(77, 1, 1);
 }
