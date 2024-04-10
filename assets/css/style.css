@@ -3,7 +3,8 @@
   --light-red: #c22828;
   --maroon: #8a0f0f;
   --crimson: #3c0303;
-  --glow: #bc544b;
+  --glow: #f684e5;
+  --light-pink: #f7e6ee;
 }
 
 * {
@@ -13,7 +14,8 @@
 }
 
 body {
-  background-color: var(--pink);
+  background-color: var(--light-pink);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -22,32 +24,28 @@ header {
     "Lucida Sans", Arial, sans-serif;
   background-color: var(--maroon);
   color: var(--pink);
-  width: 100%;
   display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-start;
 }
 
 header nav {
-  padding-top: 70px;
-  float: inline-end;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 25px;
-  font-weight: bolder;
+  font-size: 30px;
+  font-weight: 550;
   display: flex;
   justify-content: flex-end;
+  width: 80%;
 }
 
 header nav ul {
   list-style-type: none;
-  margin-top: -13%;
-  display: flex;
-  justify-content: flex-end;
 }
 
 header nav ul li {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 25px;
+  display: inline-block;
 }
 
 a {
@@ -58,24 +56,67 @@ img {
   height: auto;
   max-width: 20%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
 }
 
 h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 50 px;
+  color: var(--crimson);
+  display: flex;
 }
 
-.sidebar {
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 50 px;
+  color: var(--pink);
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-content {
   width: 80%;
   margin: 35px auto;
   padding: 20px;
   background-color: var(--light-red);
   border: 5px var(--crimson);
   box-shadow: 0px 4px 8px var(--maroon);
+  align-items: center;
 }
 
-.sidebar:hover {
+.box-content:hover {
   box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgb(77, 1, 1);
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.enlarge {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70%;
+  border: solid white;
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  header,
+  section,
+  img,
+  .box-content {
+    flex-direction: column;
+  }
 }
