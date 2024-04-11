@@ -6,18 +6,18 @@
   --glow: #f684e5;
   --light-pink: #f7e6ee;
 }
-
+/*Added a root to make it easier to see how I wanted the colors to be on the page*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Used a "*" so my whole page is effect by this*/
 body {
   background-color: var(--light-pink);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/*Added a All User friendly font-family*/
 header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -47,7 +47,7 @@ header nav ul {
 header nav ul li {
   display: inline-block;
 }
-
+/*^^^grouped style for everything in the header so I can see what is being effected within the header*/
 a {
   color: var(--crimson);
 }
@@ -60,7 +60,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
+/*^^ Added this to the images so they can flex with the page*/
 h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -68,7 +68,7 @@ h2 {
   color: var(--crimson);
   display: flex;
 }
-
+/*Added colors and special fonts for the sections and grouped "p" and "h4" together since I wanted the same styling.*/
 h4,
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -98,7 +98,7 @@ footer {
   box-shadow: 0px 4px 8px var(--maroon);
   align-items: center;
 }
-
+/*Added this class to be the style for my sections along with adding a hover glow effect.*/
 .box-content:hover {
   box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgb(77, 1, 1);
 }
@@ -109,14 +109,14 @@ footer {
   align-items: center;
   width: 100%;
 }
-
+/*For these two sections I had different sizes and behavors for these images so thats why I made 2 classes for the different images*/
 .enlarge {
   height: auto;
   display: flex;
   flex-wrap: wrap;
   max-width: 70%;
 }
-
+/*Media Query added here so that the page can adjust the layout and other visual elemets based on the screen size.*/
 @media screen and (max-width: 768px) {
   body,
   header,
