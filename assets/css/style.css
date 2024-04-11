@@ -69,12 +69,19 @@ h2 {
   display: flex;
 }
 
+h4,
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 50 px;
   color: var(--pink);
   display: flex;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  color: var(--crimson);
 }
 
 .column {
@@ -108,7 +115,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   max-width: 70%;
-  border: solid white;
 }
 
 @media screen and (max-width: 768px) {
