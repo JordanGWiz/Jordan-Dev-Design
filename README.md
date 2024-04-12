@@ -18,7 +18,7 @@ As I continue to develop my skills and gain more experience, this portfolio will
 
 ![screenshotofwebsite](./assets/images/sc-of-website.png)
 
-[Link to Deployed Website]()
+[Link to Deployed Website](https://jordangwiz.github.io/Jordan-Dev-Design/)
 
 ## Collaborators
 
